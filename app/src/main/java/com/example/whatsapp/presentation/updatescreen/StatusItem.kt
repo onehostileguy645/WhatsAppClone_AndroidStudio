@@ -35,7 +35,7 @@ fun MyStatus (){
         Box{
 
             Image(
-                painter = painterResource(id = R.drawable.bhuvan_bam),
+                painter = painterResource(id = R.drawable.ssa),
                 contentDescription = null,
                 modifier = Modifier
                     .size(60.dp)

@@ -32,9 +32,9 @@ import com.example.whatsapp.presentation.bottomnavigation.BottomNavigation
 fun UpdateScreen(){
 
     val sampleitem = listOf(
-        StatusData(R.drawable.bhuvan_bam, "Ktoto", "Just Now"),
-        StatusData(R.drawable.bhuvan_bam, "Ktoto", "Just Now"),
-        StatusData(R.drawable.bhuvan_bam, "Ktoto", "Just Now"),
+        StatusData(R.drawable.ssa, "Ktoto", "Just Now"),
+        StatusData(R.drawable.ssa, "Ktoto", "Just Now"),
+        StatusData(R.drawable.ssa, "Ktoto", "Just Now"),
     )
 
     val sampleChannel = listOf(
