@@ -71,7 +71,7 @@ fun CallScreen(){
                         }
                         else{
                             Text(
-                                text = "Call",
+                                text = "Calls",
                                 fontSize = 28.sp,
                                 color = Color.Black,
                                 fontWeight = FontWeight.Bold,
