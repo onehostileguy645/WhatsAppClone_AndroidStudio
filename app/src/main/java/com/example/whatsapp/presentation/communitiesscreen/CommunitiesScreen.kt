@@ -10,6 +10,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.DropdownMenu
@@ -40,6 +42,11 @@ import com.example.whatsapp.presentation.bottomnavigation.BottomNavigation
 @Composable
 @Preview(showSystemUi = true)
 fun CommunitiesScreen() {
+
+    val samplecommunities = listOf(
+        Communities(R.drawable.img, "Tech Enthusiasts", "256 members")
+    )
+
 
     var isSearching by remember() {
         mutableStateOf(false)
@@ -152,7 +159,14 @@ fun CommunitiesScreen() {
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
-                    .padding(horizontal = 16.dp, vertical = 8.dp))
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            )
+
+            LazyColumn {
+                items(samplecommunities) {
+                    CommunityItemDesign(it)
+                }
+            }
         }
     }
 }
