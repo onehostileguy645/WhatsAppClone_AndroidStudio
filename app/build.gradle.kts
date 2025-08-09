@@ -4,6 +4,11 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 
     kotlin("plugin.serialization") version "2.1.0"
+
+    id("com.google.dagger.hilt.android")
+
+    id("kotlin-kapt")
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -51,6 +56,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -62,4 +68,9 @@ dependencies {
 
     implementation("androidx.navigation:navigation-compose:2.9.0-alpha04")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3 ")
+
+    implementation("com.google.dagger:hilt-android:2.49")
+    kapt("com.google.dagger:hilt-compiler:2.48.1")
+
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 }
