@@ -1,6 +1,6 @@
 package com.example.whatsapp.models
 
-data class PhoneUserAuth (
+data class PhoneAuthUser (
     val userId: String="",
     val phoneNumber: String="",
     val name: String="",
